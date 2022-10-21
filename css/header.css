@@ -1,6 +1,7 @@
 header{
 	background-color: #fff;
-	position:relative;
+	position: relative;
+	z-index: 999;
 }
 
 header #top{
@@ -11,6 +12,7 @@ header #top{
 header .wrapper{
 	--padding: 30px;
     position: fixed;
+	z-index: 999;
     top: 0;
     left: var(--padding);
     right: var(--padding);
@@ -18,10 +20,11 @@ header .wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
+	background-color: #fff;
 }
 
 header .wrapper .logo{
-    height: 80%;
+    height: 50%;
 }
 
 header .wrapper .logo img{
@@ -29,14 +32,39 @@ header .wrapper .logo img{
     height: 100%;
 }
 
-header .wrapper .navList{
+header .navList{
 	position: absolute;
+	z-index: -1;
 	width: 80%;
 	bottom: 0;
 	left: 50%;
-	transform: translateX(-50%) translateY(100%);
+	transform: translateX(-50%) translateY(-50%);
 	background: #fff;
 	box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+	transition: all 0.3s ease-out;
+}
+
+header .navList ul{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+header .navList ul li{
+	flex: 1;
+	width: 100%;
+	transition: all 0.2s ease-in-out;
+	padding: 10px 0;
+	text-align: center;
+}
+
+header .navList ul li:hover,
+header .navList ul li[active]
+{
+	background: var(--primary-color);
+	color: #fff;
 }
 
 header .wrapper .iconMenu{
@@ -78,4 +106,8 @@ header.showNavList .wrapper .iconMenu div span:nth-child(2){
 }
 header.showNavList .wrapper .iconMenu div span:nth-child(3){
 	transform: translateY(-5px) rotate(-45deg);
+}
+
+header.showNavList .navList{
+	transform: translateX(-50%) translateY(100%);
 }
