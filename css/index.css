@@ -139,3 +139,20 @@
 .entidades .cardList .card a:hover iconify-icon{
     margin-left: 10px;
 }
+
+
+.academicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.missao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
