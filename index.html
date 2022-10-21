@@ -1,63 +1,161 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>COLCIC | Colegiado de Ciência da Computação</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COLCIC | Colegiado de Ciência da Computação</title>
 
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
-	<link rel="stylesheet" href="./css/default.css" />
-	<link rel="stylesheet" href="./css/reset.css" />
-	<link rel="stylesheet" href="./css/header.css" />
-	<link rel="stylesheet" href="./css/buttons.css" />
-</head>
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/buttons.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
 
-<body>
-	<header>
-		<div class="wrapper">
-			<div class="logo">
-				<img src="./assets/logo.png" alt="Logo COLCIC" />
-			</div>
-			<button class="iconMenu" onclick="toggleNavList()">
-				<div>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-			</button>
-		</div>
-		<div class="navList">
-			<ul>
-				<li active>Início</li>
-				<li>Sobre</li>
-				<li>Apoio ao estudante</li>
-				<li>Colegiado</li>
-				<li>Docentes</li>
-				<li>Diversos</li>
-				<li>Contato</li>
-			</ul>
-		</div>
-		<div id="top"></div>
-	</header>
-	<main>
-		<section>
-			<MaxWidthWrapper>
-				<h4>Bem vindo(a) a UESC</h4>
-				<h1>Colegiado de <b>Ciência da Computação</b></h1>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin enim pellentesque commodo
-					proin
-					risus diam massa.
-				</p>
-				<PrimaryButton>Saiba mais</PrimaryButton>
-			</MaxWidthWrapper>
-		</section>
-	</main>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+  </head>
 
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="wrapperContent">
+          <div class="logo">
+            <img src="./assets/logo.png" alt="Logo COLCIC" />
+          </div>
+          <button class="iconMenu" onclick="toggleNavList()">
+            <div>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="navList">
+        <ul>
+          <li active>Início</li>
+          <li>Sobre</li>
+          <li>Apoio ao estudante</li>
+          <li>Colegiado</li>
+          <li>Docentes</li>
+          <li>Diversos</li>
+          <li>Contato</li>
+        </ul>
+      </div>
+      <div id="top"></div>
+    </header>
+    <main>
+      <section class="mainContent">
+        <div class="MaxWidthWrapper">
+          <h2>Bem vindo(a) a UESC</h2>
+          <h1>Colegiado de <b>Ciência da Computação</b></h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sollicitudin enim pellentesque commodo proin risus diam massa.
+          </p>
+          <PrimaryButton>Saiba mais</PrimaryButton>
+        </div>
+      </section>
+      <section variant>
+        <div class="MaxWidthWrapper">
+          <div class="redesSociais">
+            <div class="title">
+              <p>Estamos nas redes!</p>
+              <span>
+                <iconify-icon icon="akar-icons:arrow-down"></iconify-icon>
+              </span>
+            </div>
+            <div class="list">
+              <a class="item" href="#">
+                <iconify-icon icon="akar-icons:discord-fill"></iconify-icon>
+                <p>Discord</p>
+              </a>
+              <a class="item" href="#">
+                <iconify-icon icon="akar-icons:telegram-fill"></iconify-icon>
+                <p>Telegram</p>
+              </a>
+              <a class="item" href="#">
+                <iconify-icon icon="ant-design:instagram-filled"></iconify-icon>
+                <p>Instagram</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section variant>
+        <div class="MaxWidthWrapper">
+          <div class="entidades">
+            <h1>Entidades</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              iste odio esse impedit.
+            </p>
+            <div class="cardList">
+              <div class="card">
+                <img src="./assets/entidades/tecno.png" alt="Logo da TecnoJr" />
+                <h2>TecnoJr</h2>
+                <p>Associação Empresa Júnior de Computação</p>
+                <a href="#">
+                  <span>Saiba mais</span>
+                  <iconify-icon
+                    icon="dashicons:arrow-right-alt2"
+                  ></iconify-icon>
+                </a>
+              </div>
+              <div class="card">
+                <img src="./assets/entidades/tecno.png" alt="Logo da TecnoJr" />
+                <h2>TecnoJr</h2>
+                <p>Associação Empresa Júnior de Computação</p>
+                <a href="#">
+                  <span>Saiba mais</span>
+                  <iconify-icon
+                    icon="dashicons:arrow-right-alt2"
+                  ></iconify-icon>
+                </a>
+              </div>
+              <div class="card">
+                <img src="./assets/entidades/tecno.png" alt="Logo da TecnoJr" />
+                <h2>TecnoJr</h2>
+                <p>Associação Empresa Júnior de Computação</p>
+                <a href="#">
+                  <span>Saiba mais</span>
+                  <iconify-icon
+                    icon="dashicons:arrow-right-alt2"
+                  ></iconify-icon>
+                </a>
+              </div>
+              <div class="card">
+                <img src="./assets/entidades/tecno.png" alt="Logo da TecnoJr" />
+                <h2>TecnoJr</h2>
+                <p>Associação Empresa Júnior de Computação</p>
+                <a href="#">
+                  <span>Saiba mais</span>
+                  <iconify-icon
+                    icon="dashicons:arrow-right-alt2"
+                  ></iconify-icon>
+                </a>
+              </div>
+              <div class="card">
+                <img src="./assets/entidades/tecno.png" alt="Logo da TecnoJr" />
+                <h2>TecnoJr</h2>
+                <p>Associação Empresa Júnior de Computação</p>
+                <a href="#">
+                  <span>Saiba mais</span>
+                  <iconify-icon
+                    icon="dashicons:arrow-right-alt2"
+                  ></iconify-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-	<script src="./js/header.js"></script>
-</body>
+    <footer>aaa</footer>
 
+    <script src="./js/header.js"></script>
+  </body>
 </html>

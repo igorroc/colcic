@@ -1,0 +1,141 @@
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mainContent h2{
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.mainContent h1 b{
+    color: var(--primary-color);
+}
+
+.redesSociais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.redesSociais .title{
+    position: relative;
+    width: max-content;
+    padding: 20px 30px;
+    font-weight: bold;
+    background: var(--secondary-color);
+}
+
+.redesSociais .title span{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    padding: 10px;
+    background: var(--secondary-color);
+    border-radius: 50%;
+    font-size: 1.2em;
+    width: 20px;
+    height: 20px;
+}
+
+.redesSociais .list{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+}
+
+.redesSociais .list .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+    gap: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: background 200ms ease-out;
+}
+
+.redesSociais .list .item:hover{
+    background: var(--secondary-color);
+}
+
+.entidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.entidades h1, .entidades p{
+    color: #fff;
+}
+
+.entidades .cardList{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.entidades .cardList .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 250px;
+    padding: 50px;
+    border-radius: 5px;
+    gap: 10px;
+    background: #fff;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    transition: background 200ms ease-out;
+    text-align: start;
+}
+
+.entidades .cardList .card img{
+    width: 100%;
+    max-width: 100px;
+}
+
+.entidades .cardList .card p{
+    color: #000;
+}
+
+.entidades .cardList .card a{
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+.entidades .cardList .card a *{
+    color: var(--primary-color);
+}
+
+.entidades .cardList .card a iconify-icon{
+    font-size: 1.5em;
+    transition: margin 200ms ease-out;
+}
+.entidades .cardList .card a:hover iconify-icon{
+    margin-left: 10px;
+}
