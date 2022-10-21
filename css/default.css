@@ -2,7 +2,8 @@
 
 :root{
     --text-color: #000;
-    --primary-color: #314CA5;
+    --primary-color: #4561BD;
+    --primary-color-hover: #314CA5;
     --secondary-color: #F5CF21;
     --background-color: #E8F1FF;
     --background-color-2: #D4E1F4;
@@ -20,4 +21,15 @@ body{
 
 *{
 	font-family: 'Montserrat', sans-serif;
+}
+
+MaxWidthWrapper{
+	position: relative;
+	width: 90%;
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+MaxWidthWrapper *{
+	width: 100%;
 }

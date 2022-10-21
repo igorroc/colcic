@@ -7,15 +7,16 @@ header{
 header #top{
 	width: 100%;
 	height: 80px;
+	margin-bottom: 30px;
 }
 
 header .wrapper{
-	--padding: 30px;
     position: fixed;
 	z-index: 999;
     top: 0;
-    left: var(--padding);
-    right: var(--padding);
+    left: 0;
+    right: 0;
+	padding: 0 30px;
     height: 80px;
     display: flex;
     align-items: center;
@@ -82,30 +83,32 @@ header .wrapper .iconMenu{
 header .wrapper .iconMenu div span{
 	display: block;
 	width: 30px;
-	height: 5px;
+	--height: 4px;
+	height: var(--height);
 	border-radius: 10px;
 	background: var(--primary-color);
 	transition: all 300ms ease-out;
 }
 
 header .wrapper .iconMenu div span:nth-child(1){
-	transform: translateY(-5px);
+	transform: translateY(calc(-1.2 * var(--height)));
 }
 
 header .wrapper .iconMenu div span:nth-child(3){
-	transform: translateY(5px);
+	transform: translateY(calc(1.2 * var(--height)));
 }
 
 
 /* Show Nav List */
 header.showNavList .wrapper .iconMenu div span:nth-child(1){
-	transform: translateY(5px) rotate(45deg);
+	transform: translateY(var(--height)) rotate(45deg);
 }
 header.showNavList .wrapper .iconMenu div span:nth-child(2){
 	opacity: 0;
+	transform: translateX(-100%) scaleX(0);
 }
 header.showNavList .wrapper .iconMenu div span:nth-child(3){
-	transform: translateY(-5px) rotate(-45deg);
+	transform: translateY(calc(-1 * var(--height))) rotate(-45deg);
 }
 
 header.showNavList .navList{

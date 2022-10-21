@@ -1,0 +1,16 @@
+PrimaryButton{
+	display: block;
+	background: var(--primary-color);
+	width: max-content;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 0.5em 1em;
+	border-radius: 0.5em;
+	cursor: pointer;
+	transition: all 300ms ease-out;
+}
+
+PrimaryButton:hover{
+	background: var(--primary-color-hover);
+}
