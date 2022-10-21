@@ -6,3 +6,7 @@
     --background-color-2: #D4E1F4;
     --background-gradient: linear-gradient(var(var(--background-color)), var(var(--background-color-2)));
 }
+
+body{
+    background: var(--background-gradient);
+}
