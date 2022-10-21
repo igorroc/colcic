@@ -11,17 +11,25 @@ header #top{
 }
 
 header .wrapper{
-    position: fixed;
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+	background-color: #fff;	
+}
+
+header .wrapper .wrapperContent{
 	z-index: 999;
     top: 0;
     left: 0;
     right: 0;
+	max-width: var(--max-width);
+	margin: 0 auto;
 	padding: 0 30px;
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-	background-color: #fff;
 }
 
 header .wrapper .logo{
