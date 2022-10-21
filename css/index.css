@@ -9,6 +9,10 @@
     font-size: 1em;
 }
 
+.mainContent h1{
+    font-size: 2em;
+}
+
 .mainContent h1 b{
     color: var(--primary-color);
 }
