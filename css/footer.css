@@ -1,6 +1,6 @@
 footer {
   position: relative;
-  background: var(--variant-background-color);
+  background: var(--variant-background-color-2);
   color: #fff;
   margin-top: 150px;
   padding: 20px 0;
@@ -22,7 +22,7 @@ footer .footerWave {
 footer .footerWave .left,
 footer .footerWave .right {
   position: relative;
-  background: var(--variant-background-color);
+  background: var(--variant-background-color-2);
   width: 25%;
   height: 100%;
 }
@@ -31,39 +31,9 @@ footer .footerWave .left {
   border-top-right-radius: 100%;
 }
 
-/* footer .footerWave .left:after {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  left: -5px;
-  width: 100%;
-  height: 50%;
-  border-bottom-left-radius: 100%;
-  transform: translate(100%, 0);
-  box-shadow: -50px 0 0 0 var(--variant-background-color),
-    -100px 0 0 0 var(--variant-background-color),
-    -150px 0 0 0 var(--variant-background-color),
-    -200px 0 0 0 var(--variant-background-color);
-} */
-
 footer .footerWave .right {
   border-top-left-radius: 100%;
 }
-
-/* footer .footerWave .right:after {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  right: -5px;
-  width: 100%;
-  height: 50%;
-  border-bottom-right-radius: 100%;
-  transform: translate(-100%, 0);
-  box-shadow: 50px 0 0 0 var(--variant-background-color),
-    100px 0 0 0 var(--variant-background-color),
-    150px 0 0 0 var(--variant-background-color),
-    200px 0 0 0 var(--variant-background-color);
-} */
 
 footer .footerLogo {
   position: absolute;
@@ -75,12 +45,12 @@ footer .footerLogo {
   border-radius: 50%;
 }
 
-footer .footerLogo div{
+footer .footerLogo div {
   width: 100%;
   height: 100%;
 }
 
-footer .footerLogo:after{
+footer .footerLogo:after {
   content: "";
   position: absolute;
   top: 0;
@@ -90,7 +60,7 @@ footer .footerLogo:after{
   border-radius: 0 0 100% 100%;
   /* background: red; */
   transform: translate(-50%, 20%);
-  box-shadow: 0 30px 0 var(--variant-background-color);
+  box-shadow: 0 30px 0 var(--variant-background-color-2);
 }
 
 footer .footerLogo img {
@@ -100,9 +70,9 @@ footer .footerLogo img {
 }
 
 footer .footerWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 footer .footerContent h1 {
@@ -145,7 +115,6 @@ footer .footerContent ul a span {
   font-weight: 600;
   transition: all 200ms ease-out;
 }
-
 
 footer .footerContent ul a:hover span {
   color: var(--secondary-color);
