@@ -83,7 +83,7 @@
 	left: 0;
 	right: 0;
 	height: 50px;
-	transform: translateY(100%);
+	transform: translateY(calc(100% - 1px));
 	background: linear-gradient(
 		90deg,
 		var(--variant-background-color),
