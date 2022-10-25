@@ -71,11 +71,6 @@
 	padding: 10px 30px;
 }
 
-#listaSemestres .card ul li:last-child,
-#listaSemestres .card ul li:first-child {
-	/* padding: 20px 30px; */
-}
-
 #listaSemestres .card ul li:nth-child(even) {
 	background: #f8f8f8;
 }
