@@ -1,457 +1,630 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>COLCIC | Colegiado de Ciência da Computação</title>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>COLCIC | Colegiado de Ciência da Computação</title>
+		<link
+			rel="shortcut icon"
+			href="./assets/favicon.png"
+			type="image/x-icon"
+		/>
 
-	<link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="./css/default.css" />
+		<link rel="stylesheet" type="text/css" href="./css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="./css/header.css" />
+		<link rel="stylesheet" type="text/css" href="./css/buttons.css" />
+		<link rel="stylesheet" type="text/css" href="./css/pages/index.css" />
+		<link rel="stylesheet" type="text/css" href="./css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="./css/slideShow.css" />
 
-	<link rel="stylesheet" type='text/css' href="./css/default.css" />
-	<link rel="stylesheet" type='text/css' href="./css/reset.css" />
-	<link rel="stylesheet" type='text/css' href="./css/header.css" />
-	<link rel="stylesheet" type='text/css' href="./css/buttons.css" />
-	<link rel="stylesheet" type='text/css' href="./css/pages/index.css" />
-	<link rel="stylesheet" type='text/css' href="./css/footer.css" />
-	<link rel="stylesheet" type='text/css' href="./css/slideShow.css" />
+		<script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+	</head>
 
-	<script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
-</head>
-
-<body>
-	<header>
-		<div class="wrapper">
-			<div class="wrapperContent">
-				<a class="logo" href="./">
-					<img src="./assets/logo.png" alt="Logo COLCIC" />
-				</a>
-				<div class="navList">
-					<ul>
-						<li active>Início</li>
-						<li class="dropdown">
-							<span class="title">
-								<span>
-									Sobre o curso
-								</span>
-								<iconify-icon icon="dashicons:arrow-down-alt2"></iconify-icon>
-							</span>
-							<ul>
-								<a href="./sobre">Ciência da Computação na UESC</a>
-								<a href="./disciplinas">Programa das Disciplinas</a>
-								<a target="_blank" href="http://nbcgib.uesc.br/colcic/document/comp_curriculares/matriz_cic_2012.pdf">
-									<span>
-										Fluxograma do Curso
-									</span>
-									<iconify-icon icon="akar-icons:link-chain"></iconify-icon>
-								</a>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<span class="title">
-								<span>
-									Apoio ao estudante
-								</span>
-								<iconify-icon icon="dashicons:arrow-down-alt2"></iconify-icon>
-							</span>
-							<ul>
-								<a target="_blank" href="http://www.prograd.uesc.br/PortalSagres/Acesso.aspx">
-									<span>
-										Portal Acadêmico
-									</span>
-									<iconify-icon icon="akar-icons:link-chain"></iconify-icon>
-								</a>
-								<a target="_blank" href="http://www.wjr.eti.br/calculadoraUesc/">
-									<span>
-										Calculadora de Prova Final
-									</span>
-									<iconify-icon icon="akar-icons:link-chain"></iconify-icon>
-								</a>
-								<a href="./aproveitamentos">
-										Aproveitamento de Estudos
-								</a>
-								<a href="./matricula">
-										Orientação sobre Matrícula
-								</a>
-								<a href="./complementares">
-										Atividades complementares (Barema)
-								</a>
-								<a target="_blank" href="http://nbcgib.uesc.br/colcic/document/comp_curriculares/regulamentoestagio.pdf">
-									<span>
-										Regulamento do Estágio
-									</span>
-									<iconify-icon icon="akar-icons:link-chain"></iconify-icon>
-								</a>
-								<a href="./tcc">
-										Trabalhos de Conclusão de Curso
-								</a>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<span class="title">
-								<span>
-									Colegiado
-								</span>
-								<iconify-icon icon="dashicons:arrow-down-alt2"></iconify-icon>
-							</span>
-							<ul>
-								<a href="./colegiado">
-										Composição do colegiado
-								</a>
-								<a href="./calendario">
-										Calendário de Reuniões
-								</a>
-								<a target="_blank" href="http://nbcgib.uesc.br/dcetweb/">
-									<span>
-										Área para membros do COLCIC
-									</span>
-									<iconify-icon icon="akar-icons:link-chain"></iconify-icon>
-								</a>
-							</ul>
-						</li>
-						<a target="_blank" href="http://www.uesc.br/dcet/index.php?item=conteudo_informatica.php">
-							<span>Docentes</span>
-							<iconify-icon icon="akar-icons:link-chain"></iconify-icon>
-						</a>
-						<li class="dropdown">
-							<span class="title">
-								<span>
-									Diversos
-								</span>
-								<iconify-icon icon="dashicons:arrow-down-alt2"></iconify-icon>
-							</span>
-							<ul>
-								<a target="_blank" href="http://sinform.tecnojr.com.br/">
-									<span>
-										SINFORM
-									</span>
-									<iconify-icon icon="akar-icons:link-chain"></iconify-icon>
-								</a>
-								<a href="./egressos">
-										Egressos do Curso
-								</a>
-								<a href="./licencas">
-										Licenças acadêmicas de Software
-								</a>
-							</ul>
-						</li>
-						<a href="./contato">Contato</a>
-					</ul>
-				</div>
-				<button class="iconMenu" onclick="toggleNavList()">
-					<div>
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-				</button>
-			</div>
-		</div>
-		<div id="top"></div>
-	</header>
-	<main>
-		<section>
-			<div class="MaxWidthWrapper">
-				<div class="mainWrapper">
-					<div class="mainContent">
-						<h2>Bem vindo(a) a UESC</h2>
-						<h1>
-							Colegiado de <br />
-							<b>Ciência da Computação</b>
-						</h1>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur
-							adipiscing elit. Sollicitudin enim pellentesque
-							commodo proin risus diam massa.
-						</p>
-						<a href="./sobre" class="PrimaryButton">Saiba mais</a>
-					</div>
-					<div class="mainContentPhoto">
-						<img src="./assets/main_home.png" alt="" />
-					</div>
-				</div>
-			</div>
-		</section>
-		<section variant>
-			<div class="MaxWidthWrapper">
-				<div class="redesSociais">
-					<div class="title">
-						<p>Estamos nas redes!</p>
-						<span>
-							<iconify-icon icon="akar-icons:arrow-down"></iconify-icon>
-						</span>
-					</div>
-					<div class="list">
-						<a class="item" href="https://discord.gg/Hk8a3UGaEm">
-							<iconify-icon icon="akar-icons:discord-fill"></iconify-icon>
-							<p>Discord</p>
-						</a>
-						<a class="item" href="#">
-							<iconify-icon icon="akar-icons:telegram-fill"></iconify-icon>
-							<p>Telegram</p>
-						</a>
-						<a class="item" href="#">
-							<iconify-icon icon="ant-design:instagram-filled"></iconify-icon>
-							<p>Instagram</p>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section variant>
-			<div class="MaxWidthWrapper">
-				<div class="entidades">
-					<h1>Entidades</h1>
-					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit. Sequi iste odio esse impedit.
-					</p>
-					<div class="cardList">
-						<div class="card">
-							<img src="./assets/entidades/tecno.png" alt="Logo da TecnoJr" />
-							<h2>TecnoJr</h2>
-							<p>Associação Empresa Júnior de Computação</p>
-							<a target="_blank" href="https://tecnojr.com.br">
-								<span>Saiba mais</span>
-								<iconify-icon icon="dashicons:arrow-right-alt2"></iconify-icon>
-							</a>
-						</div>
-						<div class="card">
-							<img src="./assets/entidades/nbcgib.png" alt="Logo da TecnoJr" />
-							<h2>NBCGIB</h2>
-							<p>
-								Núcleo de Biologia Computacional e Gestão de
-								Informações Biotecnológicas
-							</p>
-							<a target="_blank" href="http://labbi.uesc.br/nbcgib/">
-								<span>Saiba mais</span>
-								<iconify-icon icon="dashicons:arrow-right-alt2"></iconify-icon>
-							</a>
-						</div>
-						<div class="card">
-							<img src="./assets/entidades/ppgmc.png" alt="Logo da TecnoJr" />
-							<h2>PPGMC</h2>
-							<p>
-								Programa de Pós-Graduação em Modelagem
-								Computacional
-							</p>
-							<a target="_blank" href="http://nbcgib.uesc.br/ppgmc/">
-								<span>Saiba mais</span>
-								<iconify-icon icon="dashicons:arrow-right-alt2"></iconify-icon>
-							</a>
-						</div>
-						<div class="card">
-							<img src="./assets/entidades/dcet.png" alt="Logo da TecnoJr" />
-							<h2>DCET</h2>
-							<p>
-								Departamento de Ciências Exatas e
-								Tecnológicas
-							</p>
-							<a target="_blank" href="http://www.uesc.br/dcet/">
-								<span>Saiba mais</span>
-								<iconify-icon icon="dashicons:arrow-right-alt2"></iconify-icon>
-							</a>
-						</div>
-						<div class="card">
-							<img src="./assets/entidades/cepedi.png" alt="Logo da TecnoJr" />
-							<h2>CEPEDI</h2>
-							<p>
-								Centro de Pesquisa, Desenvolvimento e
-								Inovação
-							</p>
-							<a target="_blank" href="http://www.cepedi.org.br/">
-								<span>Saiba mais</span>
-								<iconify-icon icon="dashicons:arrow-right-alt2"></iconify-icon>
-							</a>
-						</div>
-						<div class="card">
-							<img src="./assets/entidades/cacic.png" alt="Logo da TecnoJr" />
-							<h2>CACIC</h2>
-							<p>Centro Acadêmico de Ciência da Computação</p>
-							<a target="_blank" href="https://www.instagram.com/cacicuesc/">
-								<span>Saiba mais</span>
-								<iconify-icon icon="dashicons:arrow-right-alt2"></iconify-icon>
-							</a>
-						</div>
-						<div class="card">
-							<img src="./assets/entidades/nit.png" alt="Logo da TecnoJr" />
-							<h2>NIT</h2>
-							<p>Núcleo de Inovação e Tecnologia</p>
-							<a target="_blank" href="http://www.uesc.br/nucleos/nit/">
-								<span>Saiba mais</span>
-								<iconify-icon icon="dashicons:arrow-right-alt2"></iconify-icon>
-							</a>
-						</div>
-						<div class="card">
-							<img src="./assets/entidades/sbc.png" alt="Logo da TecnoJr" />
-							<h2>SBC</h2>
-							<p>Sociedade Brasileira de Computação</p>
-							<a target="_blank" href="http://www.sbc.org.br/">
-								<span>Saiba mais</span>
-								<iconify-icon icon="dashicons:arrow-right-alt2"></iconify-icon>
-							</a>
-						</div>
-						<div class="card">
-							<img src="./assets/entidades/erbase.png" alt="Logo da TecnoJr" />
-							<h2>ERBASE</h2>
-							<p>
-								Escola Regional de Computação Bahia, Alagoas
-								e Sergipe
-							</p>
-							<a target="_blank" href="http://www.sbc.org.br/erbase2019">
-								<span>Saiba mais</span>
-								<iconify-icon icon="dashicons:arrow-right-alt2"></iconify-icon>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section>
-			<div class="MaxWidthWrapper">
-				<div class="academicos">
-					<h1>Acadêmicos</h1>
-					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit. Sequi iste odio esse impedit.
-					</p>
-					<div class="wrapperSlideShow">
-						<div class="controls">
-							<div class="prev">
-								<iconify-icon icon="dashicons:arrow-left-alt2"></iconify-icon>
-							</div>
-							<div class="next">
-								<iconify-icon icon="dashicons:arrow-right-alt2"></iconify-icon>
-							</div>
-						</div>
-						<div class="slideShow">
-							<a class="slide" target="_blank"
-								href="http://nbcgib.uesc.br/colcic/document/horarios/COLCIC_Horarios_2022.2_Versao_1_final_prof_fisica.pdf">
-								<span class="icon">
-									<iconify-icon icon="ant-design:calendar-filled"></iconify-icon>
-								</span>
-								<p>Horário final de 2022.2</p>
-							</a>
-							<a class="slide" target="_blank"
-								href="http://nbcgib.uesc.br/colcic/document/horarios/COLCIC_Horarios_2022_1_V1.10_20220312.pdf">
-								<span class="icon">
-									<iconify-icon icon="ant-design:calendar-filled"></iconify-icon>
-								</span>
-								<p>Horário final de 2022.1</p>
-							</a>
-							<a class="slide" target="_blank"
-								href="http://nbcgib.uesc.br/colcic/document/horarios/COLCIC_Horarios_2021.2_VFINAL.pdf">
-								<span class="icon">
-									<iconify-icon icon="ant-design:calendar-filled"></iconify-icon>
-								</span>
-								<p>Horário final de 2021.2</p>
-							</a>
-							<a class="slide" target="_blank" href="http://www.prograd.uesc.br/PortalSagres/Acesso.aspx">
-								<span class="icon">
-									<iconify-icon icon="cib:stripe-s"></iconify-icon>
-								</span>
-								<p>Sistema Acadêmico SAGRES</p>
-							</a>
-							<a class="slide" target="_blank" href="http://www.uesc.br/biblioteca/">
-								<span class="icon">
-									<iconify-icon icon="ph:books-fill"></iconify-icon>
-								</span>
-								<p>Biblioteca</p>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section>
-			<div class="MaxWidthWrapper">
-				<div class="missao">
-					<h1>Missão do Curso</h1>
-					<p>
-						Proporcionar o desenvolvimento humano, social e
-						econômico, formar profissionais capacitados para
-						desenvolver produtos, serviços e processos da
-						tecnologia da informação e realizar pesquisas no
-						campo da ciência e inovação.
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing
-						elit. Elementum interdum nunc consectetur sed
-						consequat consequat pulvinar tincidunt netus.
-					</p>
-					<p>
-						Cursus pretium vel sollicitudin leo. Cursus tellus,
-						interdum sed quis aliquet purus. Vestibulum
-						dignissim quisque justo lectus.
-					</p>
-					<a class="SecondaryButton">Entre em contato</a>
-				</div>
-			</div>
-		</section>
-	</main>
-
-	<footer>
-		<div class="footerWave">
-			<div class="left"></div>
-			<a class="footerLogo" href="#top">
-				<div class="logo">
-					<img src="./assets/footerLogo.png" alt="Logo do curso de Ciência da Computação" />
-				</div>
-			</a>
-			<div class="right"></div>
-		</div>
-		<div class="MaxWidthWrapper">
-			<div class="footerWrapper">
-				<div class="footerFloat">
-					<div class="footerContent">
-						<h1>Contato</h1>
+	<body>
+		<header>
+			<div class="wrapper">
+				<div class="wrapperContent">
+					<a class="logo" href="./">
+						<img src="./assets/logo.png" alt="Logo COLCIC" />
+					</a>
+					<div class="navList">
 						<ul>
-							<a target="_blank" href="https://goo.gl/maps/FKcmwBJ76WYrLQSj8">
-								<iconify-icon icon="heroicons:map-pin-solid"></iconify-icon>
-								<span>
-									UESC, Pavilhão do DCET, 1º andar
+							<li active>Início</li>
+							<li class="dropdown">
+								<span class="title">
+									<span> Sobre o curso </span>
+									<iconify-icon
+										icon="dashicons:arrow-down-alt2"
+									></iconify-icon>
 								</span>
+								<ul>
+									<a href="./_sobre"
+										>Ciência da Computação na UESC</a
+									>
+									<a href="./_disciplinas"
+										>Programa das Disciplinas</a
+									>
+									<a
+										target="_blank"
+										href="http://nbcgib.uesc.br/colcic/document/comp_curriculares/matriz_cic_2012.pdf"
+									>
+										<span> Fluxograma do Curso </span>
+										<iconify-icon
+											icon="akar-icons:link-chain"
+										></iconify-icon>
+									</a>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<span class="title">
+									<span> Apoio ao estudante </span>
+									<iconify-icon
+										icon="dashicons:arrow-down-alt2"
+									></iconify-icon>
+								</span>
+								<ul>
+									<a
+										target="_blank"
+										href="http://www.prograd.uesc.br/PortalSagres/Acesso.aspx"
+									>
+										<span> Portal Acadêmico </span>
+										<iconify-icon
+											icon="akar-icons:link-chain"
+										></iconify-icon>
+									</a>
+									<a
+										target="_blank"
+										href="http://www.wjr.eti.br/calculadoraUesc/"
+									>
+										<span>
+											Calculadora de Prova Final
+										</span>
+										<iconify-icon
+											icon="akar-icons:link-chain"
+										></iconify-icon>
+									</a>
+									<a href="./_aproveitamentos">
+										Aproveitamento de Estudos
+									</a>
+									<a href="./_matricula">
+										Orientação sobre Matrícula
+									</a>
+									<a href="./complementares">
+										Atividades complementares (Barema)
+									</a>
+									<a
+										target="_blank"
+										href="http://nbcgib.uesc.br/colcic/document/comp_curriculares/regulamentoestagio.pdf"
+									>
+										<span> Regulamento do Estágio </span>
+										<iconify-icon
+											icon="akar-icons:link-chain"
+										></iconify-icon>
+									</a>
+									<a href="./tcc">
+										Trabalhos de Conclusão de Curso
+									</a>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<span class="title">
+									<span> Colegiado </span>
+									<iconify-icon
+										icon="dashicons:arrow-down-alt2"
+									></iconify-icon>
+								</span>
+								<ul>
+									<a href="./colegiado">
+										Composição do colegiado
+									</a>
+									<a href="./calendario">
+										Calendário de Reuniões
+									</a>
+									<a
+										target="_blank"
+										href="http://nbcgib.uesc.br/dcetweb/"
+									>
+										<span>
+											Área para membros do COLCIC
+										</span>
+										<iconify-icon
+											icon="akar-icons:link-chain"
+										></iconify-icon>
+									</a>
+								</ul>
+							</li>
+							<a
+								target="_blank"
+								href="http://www.uesc.br/dcet/index.php?item=conteudo_informatica.php"
+							>
+								<span>Docentes</span>
+								<iconify-icon
+									icon="akar-icons:link-chain"
+								></iconify-icon>
 							</a>
-							<a target="_blank" href="mailto:colcic@uesc.br">
-								<iconify-icon icon="bi:envelope-fill"></iconify-icon>
-								<span> colcic@uesc.br </span>
-							</a>
-							<a target="_blank" href="tel:7336805110">
-								<iconify-icon icon="ant-design:phone-filled"></iconify-icon>
-								<span> (73) 3680-5110 </span>
-							</a>
-							<a target="_blank" href="https://www.facebook.com/groups/colcic/">
-								<iconify-icon icon="akar-icons:facebook-fill"></iconify-icon>
-								<span> Facebook </span>
-							</a>
+							<li class="dropdown">
+								<span class="title">
+									<span> Diversos </span>
+									<iconify-icon
+										icon="dashicons:arrow-down-alt2"
+									></iconify-icon>
+								</span>
+								<ul>
+									<a
+										target="_blank"
+										href="http://sinform.tecnojr.com.br/"
+									>
+										<span> SINFORM </span>
+										<iconify-icon
+											icon="akar-icons:link-chain"
+										></iconify-icon>
+									</a>
+									<a href="./egressos"> Egressos do Curso </a>
+									<a href="./licencas">
+										Licenças acadêmicas de Software
+									</a>
+								</ul>
+							</li>
+							<a href="./contato">Contato</a>
 						</ul>
 					</div>
-					<div class="footerContent">
-						<h1>Endereço</h1>
-						<a target="_blank" href="https://goo.gl/maps/FKcmwBJ76WYrLQSj8" class="linkEndereco">
-							<p>
-								UNIVERSIDADE ESTADUAL DE SANTA CRUZ - UESC
-							</p>
-							<p>Campus Soane Nazaré de Andrade</p>
-							<p>Rodovia Jorge Amado, Km 16, Salobrinho</p>
-							<p>CEP 45662-900. Ilhéus-Bahia</p>
-						</a>
-					</div>
-				</div>
-
-				<div class="footerCopy">
-					<p>© 2022 - Todos os direitos reservados</p>
-					<p>
-						Desenvolvido por
-						<a target="_blank" href="https://ilrocha.com" id="copyIgor">Igor Rocha</a>
-					</p>
+					<button class="iconMenu" onclick="toggleNavList()">
+						<div>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</button>
 				</div>
 			</div>
-		</div>
-	</footer>
+			<div id="top"></div>
+		</header>
+		<main>
+			<section>
+				<div class="MaxWidthWrapper">
+					<div class="mainWrapper">
+						<div class="mainContent">
+							<h2>Bem vindo(a) a UESC</h2>
+							<h1>
+								Colegiado de <br />
+								<b>Ciência da Computação</b>
+							</h1>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Sollicitudin enim pellentesque
+								commodo proin risus diam massa.
+							</p>
+							<a href="./_sobre" class="PrimaryButton"
+								>Saiba mais</a
+							>
+						</div>
+						<div class="mainContentPhoto">
+							<img src="./assets/main_home.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section variant>
+				<div class="MaxWidthWrapper">
+					<div class="redesSociais">
+						<div class="title">
+							<p>Estamos nas redes!</p>
+							<span>
+								<iconify-icon
+									icon="akar-icons:arrow-down"
+								></iconify-icon>
+							</span>
+						</div>
+						<div class="list">
+							<a
+								class="item"
+								href="https://discord.gg/Hk8a3UGaEm"
+							>
+								<iconify-icon
+									icon="akar-icons:discord-fill"
+								></iconify-icon>
+								<p>Discord</p>
+							</a>
+							<a class="item" href="#">
+								<iconify-icon
+									icon="akar-icons:telegram-fill"
+								></iconify-icon>
+								<p>Telegram</p>
+							</a>
+							<a class="item" href="#">
+								<iconify-icon
+									icon="ant-design:instagram-filled"
+								></iconify-icon>
+								<p>Instagram</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section variant>
+				<div class="MaxWidthWrapper">
+					<div class="entidades">
+						<h1>Entidades</h1>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing
+							elit. Sequi iste odio esse impedit.
+						</p>
+						<div class="cardList">
+							<div class="card">
+								<img
+									src="./assets/entidades/tecno.png"
+									alt="Logo da TecnoJr"
+								/>
+								<h2>TecnoJr</h2>
+								<p>Associação Empresa Júnior de Computação</p>
+								<a
+									target="_blank"
+									href="https://tecnojr.com.br"
+								>
+									<span>Saiba mais</span>
+									<iconify-icon
+										icon="dashicons:arrow-right-alt2"
+									></iconify-icon>
+								</a>
+							</div>
+							<div class="card">
+								<img
+									src="./assets/entidades/nbcgib.png"
+									alt="Logo da TecnoJr"
+								/>
+								<h2>NBCGIB</h2>
+								<p>
+									Núcleo de Biologia Computacional e Gestão de
+									Informações Biotecnológicas
+								</p>
+								<a
+									target="_blank"
+									href="http://labbi.uesc.br/nbcgib/"
+								>
+									<span>Saiba mais</span>
+									<iconify-icon
+										icon="dashicons:arrow-right-alt2"
+									></iconify-icon>
+								</a>
+							</div>
+							<div class="card">
+								<img
+									src="./assets/entidades/ppgmc.png"
+									alt="Logo da TecnoJr"
+								/>
+								<h2>PPGMC</h2>
+								<p>
+									Programa de Pós-Graduação em Modelagem
+									Computacional
+								</p>
+								<a
+									target="_blank"
+									href="http://nbcgib.uesc.br/ppgmc/"
+								>
+									<span>Saiba mais</span>
+									<iconify-icon
+										icon="dashicons:arrow-right-alt2"
+									></iconify-icon>
+								</a>
+							</div>
+							<div class="card">
+								<img
+									src="./assets/entidades/dcet.png"
+									alt="Logo da TecnoJr"
+								/>
+								<h2>DCET</h2>
+								<p>
+									Departamento de Ciências Exatas e
+									Tecnológicas
+								</p>
+								<a
+									target="_blank"
+									href="http://www.uesc.br/dcet/"
+								>
+									<span>Saiba mais</span>
+									<iconify-icon
+										icon="dashicons:arrow-right-alt2"
+									></iconify-icon>
+								</a>
+							</div>
+							<div class="card">
+								<img
+									src="./assets/entidades/cepedi.png"
+									alt="Logo da TecnoJr"
+								/>
+								<h2>CEPEDI</h2>
+								<p>
+									Centro de Pesquisa, Desenvolvimento e
+									Inovação
+								</p>
+								<a
+									target="_blank"
+									href="http://www.cepedi.org.br/"
+								>
+									<span>Saiba mais</span>
+									<iconify-icon
+										icon="dashicons:arrow-right-alt2"
+									></iconify-icon>
+								</a>
+							</div>
+							<div class="card">
+								<img
+									src="./assets/entidades/cacic.png"
+									alt="Logo da TecnoJr"
+								/>
+								<h2>CACIC</h2>
+								<p>Centro Acadêmico de Ciência da Computação</p>
+								<a
+									target="_blank"
+									href="https://www.instagram.com/cacicuesc/"
+								>
+									<span>Saiba mais</span>
+									<iconify-icon
+										icon="dashicons:arrow-right-alt2"
+									></iconify-icon>
+								</a>
+							</div>
+							<div class="card">
+								<img
+									src="./assets/entidades/nit.png"
+									alt="Logo da TecnoJr"
+								/>
+								<h2>NIT</h2>
+								<p>Núcleo de Inovação e Tecnologia</p>
+								<a
+									target="_blank"
+									href="http://www.uesc.br/nucleos/nit/"
+								>
+									<span>Saiba mais</span>
+									<iconify-icon
+										icon="dashicons:arrow-right-alt2"
+									></iconify-icon>
+								</a>
+							</div>
+							<div class="card">
+								<img
+									src="./assets/entidades/sbc.png"
+									alt="Logo da TecnoJr"
+								/>
+								<h2>SBC</h2>
+								<p>Sociedade Brasileira de Computação</p>
+								<a
+									target="_blank"
+									href="http://www.sbc.org.br/"
+								>
+									<span>Saiba mais</span>
+									<iconify-icon
+										icon="dashicons:arrow-right-alt2"
+									></iconify-icon>
+								</a>
+							</div>
+							<div class="card">
+								<img
+									src="./assets/entidades/erbase.png"
+									alt="Logo da TecnoJr"
+								/>
+								<h2>ERBASE</h2>
+								<p>
+									Escola Regional de Computação Bahia, Alagoas
+									e Sergipe
+								</p>
+								<a
+									target="_blank"
+									href="http://www.sbc.org.br/erbase2019"
+								>
+									<span>Saiba mais</span>
+									<iconify-icon
+										icon="dashicons:arrow-right-alt2"
+									></iconify-icon>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="MaxWidthWrapper">
+					<div class="academicos">
+						<h1>Acadêmicos</h1>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing
+							elit. Sequi iste odio esse impedit.
+						</p>
+						<div class="wrapperSlideShow">
+							<div class="controls">
+								<div class="prev">
+									<iconify-icon
+										icon="dashicons:arrow-left-alt2"
+									></iconify-icon>
+								</div>
+								<div class="next">
+									<iconify-icon
+										icon="dashicons:arrow-right-alt2"
+									></iconify-icon>
+								</div>
+							</div>
+							<div class="slideShow">
+								<a
+									class="slide"
+									target="_blank"
+									href="http://nbcgib.uesc.br/colcic/document/horarios/COLCIC_Horarios_2022.2_Versao_1_final_prof_fisica.pdf"
+								>
+									<span class="icon">
+										<iconify-icon
+											icon="ant-design:calendar-filled"
+										></iconify-icon>
+									</span>
+									<p>Horário final de 2022.2</p>
+								</a>
+								<a
+									class="slide"
+									target="_blank"
+									href="http://nbcgib.uesc.br/colcic/document/horarios/COLCIC_Horarios_2022_1_V1.10_20220312.pdf"
+								>
+									<span class="icon">
+										<iconify-icon
+											icon="ant-design:calendar-filled"
+										></iconify-icon>
+									</span>
+									<p>Horário final de 2022.1</p>
+								</a>
+								<a
+									class="slide"
+									target="_blank"
+									href="http://nbcgib.uesc.br/colcic/document/horarios/COLCIC_Horarios_2021.2_VFINAL.pdf"
+								>
+									<span class="icon">
+										<iconify-icon
+											icon="ant-design:calendar-filled"
+										></iconify-icon>
+									</span>
+									<p>Horário final de 2021.2</p>
+								</a>
+								<a
+									class="slide"
+									target="_blank"
+									href="http://www.prograd.uesc.br/PortalSagres/Acesso.aspx"
+								>
+									<span class="icon">
+										<iconify-icon
+											icon="cib:stripe-s"
+										></iconify-icon>
+									</span>
+									<p>Sistema Acadêmico SAGRES</p>
+								</a>
+								<a
+									class="slide"
+									target="_blank"
+									href="http://www.uesc.br/biblioteca/"
+								>
+									<span class="icon">
+										<iconify-icon
+											icon="ph:books-fill"
+										></iconify-icon>
+									</span>
+									<p>Biblioteca</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="MaxWidthWrapper">
+					<div class="missao">
+						<h1>Missão do Curso</h1>
+						<p>
+							Proporcionar o desenvolvimento humano, social e
+							econômico, formar profissionais capacitados para
+							desenvolver produtos, serviços e processos da
+							tecnologia da informação e realizar pesquisas no
+							campo da ciência e inovação.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit. Elementum interdum nunc consectetur sed
+							consequat consequat pulvinar tincidunt netus.
+						</p>
+						<p>
+							Cursus pretium vel sollicitudin leo. Cursus tellus,
+							interdum sed quis aliquet purus. Vestibulum
+							dignissim quisque justo lectus.
+						</p>
+						<a class="SecondaryButton">Entre em contato</a>
+					</div>
+				</div>
+			</section>
+		</main>
 
-	<script src="./js/header.js"></script>
-</body>
+		<footer>
+			<div class="footerWave">
+				<div class="left"></div>
+				<a class="footerLogo" href="#top">
+					<div class="logo">
+						<img
+							src="./assets/footerLogo.png"
+							alt="Logo do curso de Ciência da Computação"
+						/>
+					</div>
+				</a>
+				<div class="right"></div>
+			</div>
+			<div class="MaxWidthWrapper">
+				<div class="footerWrapper">
+					<div class="footerFloat">
+						<div class="footerContent">
+							<h1>Contato</h1>
+							<ul>
+								<a
+									target="_blank"
+									href="https://goo.gl/maps/FKcmwBJ76WYrLQSj8"
+								>
+									<iconify-icon
+										icon="heroicons:map-pin-solid"
+									></iconify-icon>
+									<span>
+										UESC, Pavilhão do DCET, 1º andar
+									</span>
+								</a>
+								<a target="_blank" href="mailto:colcic@uesc.br">
+									<iconify-icon
+										icon="bi:envelope-fill"
+									></iconify-icon>
+									<span> colcic@uesc.br </span>
+								</a>
+								<a target="_blank" href="tel:7336805110">
+									<iconify-icon
+										icon="ant-design:phone-filled"
+									></iconify-icon>
+									<span> (73) 3680-5110 </span>
+								</a>
+								<a
+									target="_blank"
+									href="https://www.facebook.com/groups/colcic/"
+								>
+									<iconify-icon
+										icon="akar-icons:facebook-fill"
+									></iconify-icon>
+									<span> Facebook </span>
+								</a>
+							</ul>
+						</div>
+						<div class="footerContent">
+							<h1>Endereço</h1>
+							<a
+								target="_blank"
+								href="https://goo.gl/maps/FKcmwBJ76WYrLQSj8"
+								class="linkEndereco"
+							>
+								<p>
+									UNIVERSIDADE ESTADUAL DE SANTA CRUZ - UESC
+								</p>
+								<p>Campus Soane Nazaré de Andrade</p>
+								<p>Rodovia Jorge Amado, Km 16, Salobrinho</p>
+								<p>CEP 45662-900. Ilhéus-Bahia</p>
+							</a>
+						</div>
+					</div>
 
+					<div class="footerCopy">
+						<p>© 2022 - Todos os direitos reservados</p>
+						<p>
+							Desenvolvido por
+							<a
+								target="_blank"
+								href="https://ilrocha.com"
+								id="copyIgor"
+								>Igor Rocha</a
+							>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="./js/header.js"></script>
+	</body>
 </html>
