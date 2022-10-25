@@ -1,0 +1,131 @@
+.mainWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.mainWrapper .mainContentPhoto {
+	display: none;
+	max-width: 30%;
+	width: auto;
+}
+
+.mainWrapper .mainContentPhoto img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.mainContent {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.mainContent h1 {
+	font-size: 2em;
+	color: #fff;
+}
+
+.mainContent p {
+	color: #fff;
+}
+
+.mainContent h1 b {
+	color: var(--secondary-color);
+}
+
+.orientacoes {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+}
+
+.fasesLista {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+}
+
+.fasesLista .fase {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+}
+
+.fasesLista .fase:nth-child(even) .content {
+	flex-direction: row-reverse;
+}
+
+.fasesLista .fase .content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+}
+
+.fasesLista .fase .content .contentPhoto {
+	width: 30%;
+}
+
+.fasesLista .fase .content .contentPhoto .mobile {
+	display: none;
+}
+
+.fasesLista .fase .content .contentPhoto img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.fasesLista .fase .content .contentText {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1em;
+}
+
+.fasesLista .fase .content .contentText ol {
+	margin-left: 2em;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+@media (min-width: 860px) {
+	.mainWrapper .mainContentPhoto {
+		display: block;
+	}
+	.mainContent {
+		max-width: 50%;
+	}
+}
+
+@media (max-width: 700px) {
+	.fasesLista .fase .content,
+	.fasesLista .fase:nth-child(even) .content {
+		flex-direction: column;
+	}
+
+	.fasesLista .fase .content .contentPhoto {
+		width: 80%;
+	}
+
+	.fasesLista .fase .content .contentPhoto :not(.mobile) {
+		display: none;
+	}
+
+	.fasesLista .fase .content .contentPhoto .mobile {
+		display: block;
+	}
+
+	.fasesLista .fase .content .contentText {
+		width: 100%;
+	}
+}

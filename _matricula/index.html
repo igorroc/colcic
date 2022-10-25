@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Aproveitamento de Estudos | COLCIC</title>
+		<title>Matrícula para Veteranos | COLCIC</title>
 
 		<link
 			rel="shortcut icon"
@@ -18,10 +18,10 @@
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="../css/pages/aproveitamentos.css"
+			href="../css/pages/matricula.css"
 		/>
 		<link rel="stylesheet" type="text/css" href="../css/footer.css" />
-		<link rel="stylesheet" type="text/css" href="../css/slideShow.css" />
+		<link rel="stylesheet" type="text/css" href="../css/player.css" />
 
 		<script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
 	</head>
@@ -89,10 +89,10 @@
 											icon="akar-icons:link-chain"
 										></iconify-icon>
 									</a>
-									<a active href="../_aproveitamentos">
+									<a href="../_aproveitamentos">
 										Aproveitamento de Estudos
 									</a>
-									<a href="../_matricula">
+									<a active href="../_matricula">
 										Orientação sobre Matrícula
 									</a>
 									<a href="../complementares">
@@ -188,106 +188,167 @@
 			<div id="top"></div>
 		</header>
 		<main>
-			<section>
+			<section variant>
 				<div class="MaxWidthWrapper">
 					<div class="mainWrapper">
 						<div class="mainContent">
 							<h1>
-								Aproveitamento <br />
-								<b>de Estudos</b>
+								Matrícula para <br />
+								<b>Veteranos</b>
 							</h1>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit. Sollicitudin enim pellentesque
 								commodo proin risus diam massa.
 							</p>
-							<a href="#procedimentos" class="PrimaryButton"
-								>Saiba mais</a
-							>
+						</div>
+						<div class="mainContentPhoto">
+							<img src="../assets/main_disciplinas.png" alt="" />
 						</div>
 					</div>
 				</div>
 			</section>
-			<section variant class="pointedSection">
+			<section>
 				<div class="MaxWidthWrapper">
-					<div class="procedimentos" id="procedimentos">
-						<h2>Procedimentos</h2>
-						<div class="content">
-							<ol class="lista">
-								<li>
-									<b>Verificar o prazo</b> no calendário da
-									UESC para esse procedimento.
-								</li>
-								<li>
-									<b>Verificar</b> se seu aproveitamento
-									<b>enquadra-se</b> no regimento da UESC,
-									Capítulo VI. O regimento pode ser encontrado
-									<a
-										target="_blank"
-										href="http://www.uesc.br/a_uesc/regimento.pdf"
-									>
-										clicando aqui.
-									</a>
-								</li>
-								<li>
-									Caso esteja no prazo, ir ao protocolo geral
-									da UESC munido dos
-									<b>seguintes documentos</b>:
-								</li>
+					<div class="orientacoes">
+						<h2>Orientações</h2>
+						<div class="player">
+							<iframe
+								width="100%"
+								height="400"
+								src="http://www.uesc.br/prograd/v1_matricula_web_r.mp4"
+								title="Orientação de Matrícula Web (PROGRAD)"
+								frameborder="0"
+								allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+							></iframe>
+						</div>
+					</div>
+				</div>
+			</section>
 
-								<ol type="a">
-									<li>
-										<b> Ementa e conteúdo programático </b>
-										da disciplina que cursou,
-										<b>carimbado e assinado</b> pelo
-										Departamento do curso ou secretaria
-										acadêmica da IES de origem.
-									</li>
-									<li>
-										<b>
-											Histórico Escolar carimbado e
-											assinado
-										</b>
-										pelo setor competente, constando a
-										disciplina cursada, a nota final,
-										frequência e situação (aprovado).
-									</li>
-									<li>
-										Protocolar o
-										<b>pedido de aproveitamento</b> de
-										estudos da disciplina cursada para a
-										disciplina pleiteada, indicando
-										<b> "código e nome da disciplina"</b>.
-									</li>
-								</ol>
-
-								<li>
-									Quando o requerimento chegar ao COLCIC,
-									<b>será enviado a um professor da área</b> a
-									qual a disciplina pertence, para ser emitido
-									parecer de deferimento, respeitando o
-									regimento da UESC.
-								</li>
-								<li>
-									Quando o COLCIC receber o parecer do
-									professor,
-									<b>encaminhará o processo à SECREGE</b>
-									para registros do aproveitamento de estudos
-									no sistema, ou não, conforme deferimento no
-									parecer. <b>Após essa etapa</b>, o aluno
-									pode <b>procurar o COLCIC</b> para
-									informações.
-								</li>
-								<li>
-									A tramitação do processo pode durar
-									<b>entre 15 dias a 01 mês</b>.
-								</li>
-							</ol>
-							<div class="imageWrapper">
-								<img
-									src="../assets/astronaut.png"
-									alt="Astronauta"
-								/>
+			<section>
+				<div class="MaxWidthWrapper">
+					<div class="fasesLista">
+						<div class="fase">
+							<h2>Primeira Fase</h2>
+							<div class="content">
+								<div class="contentPhoto">
+									<img
+										src="../assets/calendar.png"
+										alt="Primeira Fase"
+									/>
+									<img
+										class="mobile"
+										src="../assets/calendar_mobile.png"
+										alt="Primeira Fase"
+									/>
+								</div>
+								<div class="contentText">
+									<p>
+										Verificar, no calendário da UESC, o
+										<b>período</b> de primeira fase da
+										matrícula;
+									</p>
+									<p>
+										Verificar as <b>disciplinas</b> que
+										pretende cursar;
+									</p>
+									<ol>
+										<li>
+											Verificar se possui os
+											<b>pré-requisitos</b> das
+											disciplinas que deseja cursar. Para
+											isso, você pode consultar o
+											fluxograma do curso disponível
+											<a
+												target="_blank"
+												href="http://nbcgib.uesc.br/colcic/document/comp_curriculares/matriz_cic_2012.pdf"
+												>aqui</a
+											>;
+										</li>
+										<li>
+											Verificar se não existe conflito de
+											horário entre as disciplinas
+											desejadas. Caso isso ocorra você
+											deverá optar por uma disciplina,
+											daquelas que chocam horários. Para
+											verificar conflito de horários você
+											deve acessar o horário do semestre
+											em questão <b>aqui</b>;
+										</li>
+										<li>
+											Acessar o <b>portal acadêmico</b>;
+										</li>
+										<li>
+											<b>Solicitar a matrícula</b>
+											conforme os procedimentos exibidos
+											no portal;
+										</li>
+										<li>
+											<b>Salvar</b> em local seguro o
+											comprovante (protocolo) de
+											matrícula. <b>Imprima-o</b> também.
+										</li>
+									</ol>
+									<p>
+										Lembramos que os alunos devem salvar e
+										guardar o comprovante (ou protocolo) de
+										matrícula. Ele é o documento que
+										comprova que efetuou a matrícula nas
+										disciplinas escolhidas. Guarde-o com
+										muito cuidado.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="fase">
+							<h2>Segunda Fase</h2>
+							<div class="content">
+								<div class="contentPhoto">
+									<img
+										src="../assets/people.png"
+										alt="Segunda Fase"
+									/>
+									<img
+										class="mobile"
+										src="../assets/people_mobile.png"
+										alt="Segunda Fase"
+									/>
+								</div>
+								<div class="contentText">
+									<p>
+										Verificar, no calendário da UESC, o
+										<b>período</b> de segunda fase da
+										matrícula ou ajuste de matrícula.
+									</p>
+									<ol>
+										<li>
+											O ajuste de matrícula
+											<b>somente é possível via Web</b> e
+											para o aluno que fez matrícula na
+											primeira fase;
+										</li>
+										<li>
+											Acessar o <b>portal acadêmico</b>;
+										</li>
+										<li>
+											<b>Verificar a situação</b> de sua
+											matrícula;
+										</li>
+										<li>
+											<b>Fazer o ajuste</b>, caso seja
+											necessário, conforme Resolução
+											CONSEPE vigente e orientações
+											disponíveis no sistema Sagres;
+										</li>
+									</ol>
+									<p>
+										Novamente,
+										<b>imprima e guarde o comprovante</b> do
+										seu ajuste ou protocolo.
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
