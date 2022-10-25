@@ -120,6 +120,10 @@ header .wrapper .iconMenu div span:nth-child(3) {
 
 /* Show Nav List */
 @media (max-width: 1000px) {
+	header.showNavList .wrapper .iconMenu div span{
+		background: var(--cancel-color);
+	}
+	
 	header.showNavList .wrapper .iconMenu div span:nth-child(1) {
 		transform: translateY(var(--height)) rotate(45deg);
 	}
