@@ -82,7 +82,7 @@ header .navList ul a:hover:not(.dropdown){
 	color: #fff;
 }
 
-header .navList ul li[active] {
+header .navList ul li[active]:not(.dropdown) {
 	background: var(--primary-color);
 	color: #fff;
 }
@@ -93,7 +93,7 @@ header .navList ul li[active] .title > * {
 
 header .navList ul li:hover:not(.dropdown) > *,
 header .navList ul a:hover:not(.dropdown) > *,
-header .navList ul li[active] > * {
+header .navList ul li[active]:not(.dropdown) > * {
 	color: #fff;
 }
 
@@ -109,6 +109,11 @@ header .navList ul li.dropdown .title{
 	align-items: center;
 	justify-content: center;
 	gap: 5px;
+	cursor: default;
+}
+
+header .navList ul li.dropdown .title *{
+	color: var(--text-color);
 }
 
 header .navList ul li.dropdown .title iconify-icon{
@@ -130,6 +135,11 @@ header .navList ul li.dropdown:hover ul{
 	max-height: 500px;
 }
 
+header .navList ul li.dropdown ul a[active]{
+	background: var(--primary-color);
+	color: #fff;
+	font-weight: bold;
+}
 header .wrapper .iconMenu {
 	background: none;
 	border: none;
