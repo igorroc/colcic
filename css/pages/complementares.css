@@ -47,6 +47,7 @@
 	flex-direction: column;
 	justify-content: center;
 	gap: 0.5em;
+	margin-left: 1em;
 }
 
 .instrucoes .text {
@@ -62,6 +63,7 @@
 	align-items: center;
 	justify-content: center;
 	gap: 30px;
+	text-align: center;
 }
 
 #listaAtividades {
