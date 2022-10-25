@@ -15,6 +15,7 @@ header .wrapper {
 	left: 0;
 	right: 0;
 	background-color: #fff;
+	box-shadow: 0 10px 10px #0002;
 }
 
 header .wrapper .wrapperContent {
