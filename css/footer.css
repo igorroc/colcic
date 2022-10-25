@@ -75,6 +75,13 @@ footer .footerWrapper {
   gap: 20px;
 }
 
+footer .footerFloat{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 footer .footerContent h1 {
   color: #fff;
   font-size: 1.4em;
