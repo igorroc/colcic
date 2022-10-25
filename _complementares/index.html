@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Atividades Complementares | COLCIC</title>
+
+		<link
+			rel="shortcut icon"
+			href="../assets/favicon.png"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" type="text/css" href="../css/default.css" />
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/header.css" />
+		<link rel="stylesheet" type="text/css" href="../css/buttons.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="../css/pages/complementares.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="../css/footer.css" />
+
+		<script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<div class="wrapper">
+				<div class="wrapperContent">
+					<a class="logo" href="../">
+						<img src="../assets/logo.png" alt="Logo COLCIC" />
+					</a>
+					<div class="navList">
+						<ul>
+							<a href="../">Início</a>
+							<li class="dropdown" active>
+								<span class="title">
+									<span> Sobre o curso </span>
+									<iconify-icon
+										icon="dashicons:arrow-down-alt2"
+									></iconify-icon>
+								</span>
+								<ul>
+									<a href="../_sobre"
+										>Ciência da Computação na UESC</a
+									>
+									<a href="../_disciplinas"
+										>Programa das Disciplinas</a
+									>
+									<a
+										target="_blank"
+										href="http://nbcgib.uesc.br/colcic/document/comp_curriculares/matriz_cic_2012.pdf"
+									>
+										<span> Fluxograma do Curso </span>
+										<iconify-icon
+											icon="akar-icons:link-chain"
+										></iconify-icon>
+									</a>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<span class="title">
+									<span> Apoio ao estudante </span>
+									<iconify-icon
+										icon="dashicons:arrow-down-alt2"
+									></iconify-icon>
+								</span>
+								<ul>
+									<a
+										target="_blank"
+										href="http://www.prograd.uesc.br/PortalSagres/Acesso.aspx"
+									>
+										<span> Portal Acadêmico </span>
+										<iconify-icon
+											icon="akar-icons:link-chain"
+										></iconify-icon>
+									</a>
+									<a
+										target="_blank"
+										href="http://www.wjr.eti.br/calculadoraUesc/"
+									>
+										<span>
+											Calculadora de Prova Final
+										</span>
+										<iconify-icon
+											icon="akar-icons:link-chain"
+										></iconify-icon>
+									</a>
+									<a href="../_aproveitamentos">
+										Aproveitamento de Estudos
+									</a>
+									<a href="../_matricula">
+										Orientação sobre Matrícula
+									</a>
+									<a active href="../complementares">
+										Atividades complementares (Barema)
+									</a>
+									<a
+										target="_blank"
+										href="http://nbcgib.uesc.br/colcic/document/comp_curriculares/regulamentoestagio.pdf"
+									>
+										<span> Regulamento do Estágio </span>
+										<iconify-icon
+											icon="akar-icons:link-chain"
+										></iconify-icon>
+									</a>
+									<a href="../tcc">
+										Trabalhos de Conclusão de Curso
+									</a>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<span class="title">
+									<span> Colegiado </span>
+									<iconify-icon
+										icon="dashicons:arrow-down-alt2"
+									></iconify-icon>
+								</span>
+								<ul>
+									<a href="../colegiado">
+										Composição do colegiado
+									</a>
+									<a href="../calendario">
+										Calendário de Reuniões
+									</a>
+									<a
+										target="_blank"
+										href="http://nbcgib.uesc.br/dcetweb/"
+									>
+										<span>
+											Área para membros do COLCIC
+										</span>
+										<iconify-icon
+											icon="akar-icons:link-chain"
+										></iconify-icon>
+									</a>
+								</ul>
+							</li>
+							<a
+								target="_blank"
+								href="http://www.uesc.br/dcet/index.php?item=conteudo_informatica.php"
+							>
+								<span>Docentes</span>
+								<iconify-icon
+									icon="akar-icons:link-chain"
+								></iconify-icon>
+							</a>
+							<li class="dropdown">
+								<span class="title">
+									<span> Diversos </span>
+									<iconify-icon
+										icon="dashicons:arrow-down-alt2"
+									></iconify-icon>
+								</span>
+								<ul>
+									<a
+										target="_blank"
+										href="http://sinform.tecnojr.com.br/"
+									>
+										<span> SINFORM </span>
+										<iconify-icon
+											icon="akar-icons:link-chain"
+										></iconify-icon>
+									</a>
+									<a href="../egressos">
+										Egressos do Curso
+									</a>
+									<a href="../licencas">
+										Licenças acadêmicas de Software
+									</a>
+								</ul>
+							</li>
+							<a href="../contato">Contato</a>
+						</ul>
+					</div>
+					<button class="iconMenu" onclick="toggleNavList()">
+						<div>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</button>
+				</div>
+			</div>
+			<div id="top"></div>
+		</header>
+		<main>
+			<section variant>
+				<div class="MaxWidthWrapper">
+					<div class="mainWrapper">
+						<div class="mainContent">
+							<h1>
+								Atividades <br />
+								<b>Complementares</b>
+							</h1>
+							<p>
+								Segundo as diretrizes curriculares nacionais
+								para cursos de computação, são componentes
+								importantes para o desenvolvimento pleno do
+								aluno, servindo de estímulo a uma formação
+								prática independente e interdisciplinar,
+								sobretudo nas relações com o mundo do trabalho.
+							</p>
+						</div>
+						<div class="mainContentPhoto">
+							<img src="../assets/main_disciplinas.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="MaxWidthWrapper">
+					<div class="instrucoes">
+						<h2>Intruções</h2>
+						<div class="text">
+							<p>
+								Leia o procedimento abaixo. Preencha e imprima o
+								Barema clicando
+								<a
+									target="_blank"
+									href="http://nbcgib.uesc.br/colcic/baremacompl.html"
+									>aqui</a
+								>
+							</p>
+							<ol>
+								<li>
+									Junte
+									<b
+										>cópias de todos os comprovantes e
+										numere sequencialmente</b
+									>
+									as folhas no canto superior direito;
+								</li>
+								<li>
+									<b>Some as cargas horárias</b> por Atividade
+									respeitando as ordens do Barema;
+								</li>
+								<li>
+									<b>Preencha</b> no Barema, na coluna "Carga
+									horária cumprida", <b>o somatório</b> das
+									cargas horárias por Atividade;
+								</li>
+								<li>
+									Na mesma linha do Barema, na coluna
+									"Comprovante na folha",
+									<b>
+										indique o(s) número(s) da(s) folha(s)
+										correspondente(s)
+									</b>
+									à soma das cargas horárias por Atividade;
+								</li>
+								<li>
+									Ao final,
+									<b>clique no botão "TOTAL HORAS"</b>, caso
+									seja 200 horas ou mais, imprima, junte aos
+									comprovantes e entre com Requisição no
+									Protocolo;
+								</li>
+								<li>
+									Solicite ao atendente do Protocolo dar "fé
+									pública" nas cópias dos comprovantes
+									conforme os originais, para
+									<b>autenticação</b>.
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="MaxWidthWrapper">
+					<div class="atividades">
+						<h2>Atividades complementares válidas</h2>
+						<p>Conforme Projeto Pedagógico do Curso</p>
+						<div class="listaAtividades" id="listaAtividades"></div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="MaxWidthWrapper">
+					<p class="atividadesFooter">
+						As atividades serão computadas como Atividades
+						Complementares quando devidamente comprovadas através de
+						certificados e cronograma das mesmas, emitidas pelos
+						respectivos responsáveis. Os alunos deverão realizar as
+						atividades no decorrer do curso apresentando, no último
+						semestre, cópias autenticadas de todos os certificados
+						para que sejam computadas as horas. O não comprimento
+						das 200 horas de atividades complementares inviabiliza a
+						colação de grau do aluno. O aluno poderá verificar junto
+						ao colegiado, a qualquer momento, a validade do seu
+						certificado.
+					</p>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="footerWave">
+				<div class="left"></div>
+				<a class="footerLogo" href="#top">
+					<div class="logo">
+						<img
+							src="../assets/footerLogo.png"
+							alt="Logo do curso de Ciência da Computação"
+						/>
+					</div>
+				</a>
+				<div class="right"></div>
+			</div>
+			<div class="MaxWidthWrapper">
+				<div class="footerWrapper">
+					<div class="footerFloat">
+						<div class="footerContent">
+							<h1>Contato</h1>
+							<ul>
+								<a
+									target="_blank"
+									href="https://goo.gl/maps/FKcmwBJ76WYrLQSj8"
+								>
+									<iconify-icon
+										icon="heroicons:map-pin-solid"
+									></iconify-icon>
+									<span>
+										UESC, Pavilhão do DCET, 1º andar
+									</span>
+								</a>
+								<a target="_blank" href="mailto:colcic@uesc.br">
+									<iconify-icon
+										icon="bi:envelope-fill"
+									></iconify-icon>
+									<span> colcic@uesc.br </span>
+								</a>
+								<a target="_blank" href="tel:7336805110">
+									<iconify-icon
+										icon="ant-design:phone-filled"
+									></iconify-icon>
+									<span> (73) 3680-5110 </span>
+								</a>
+								<a
+									target="_blank"
+									href="https://www.facebook.com/groups/colcic/"
+								>
+									<iconify-icon
+										icon="akar-icons:facebook-fill"
+									></iconify-icon>
+									<span> Facebook </span>
+								</a>
+							</ul>
+						</div>
+						<div class="footerContent">
+							<h1>Endereço</h1>
+							<a target="_blank" href="#" class="linkEndereco">
+								<p>
+									UNIVERSIDADE ESTADUAL DE SANTA CRUZ - UESC
+								</p>
+								<p>Campus Soane Nazaré de Andrade</p>
+								<p>Rodovia Jorge Amado, Km 16, Salobrinho</p>
+								<p>CEP 45662-900. Ilhéus-Bahia</p>
+							</a>
+						</div>
+					</div>
+
+					<div class="footerCopy">
+						<p>© 2022 - Todos os direitos reservados</p>
+						<p>
+							Desenvolvido por
+							<a
+								target="_blank"
+								href="https://ilrocha.com"
+								id="copyIgor"
+								>Igor Rocha</a
+							>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="../js/header.js"></script>
+		<script src="../js/atividadesComplementares.js"></script>
+	</body>
+</html>
