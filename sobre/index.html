@@ -11,51 +11,147 @@
 			href="../assets/favicon.png"
 			type="image/x-icon"
 		/>
-		<link rel="stylesheet" href="../css/default.css" />
-		<link rel="stylesheet" href="../css/reset.css" />
-		<link rel="stylesheet" href="../css/header.css" />
-		<link rel="stylesheet" href="../css/buttons.css" />
-		<link rel="stylesheet" href="../css/sobre.css" />
-		<link rel="stylesheet" href="../css/footer.css" />
-		<link rel="stylesheet" href="../css/slideShow.css" />
+		<link rel="stylesheet" type='text/css' href="../css/default.css" />
+		<link rel="stylesheet" type='text/css' href="../css/reset.css" />
+		<link rel="stylesheet" type='text/css' href="../css/header.css" />
+		<link rel="stylesheet" type='text/css' href="../css/buttons.css" />
+		<link rel="stylesheet" type='text/css' href="../css/sobre.css" />
+		<link rel="stylesheet" type='text/css' href="../css/footer.css" />
+		<link rel="stylesheet" type='text/css' href="../css/slideShow.css" />
 
 		<script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
 	</head>
 
 	<body>
-		<header>
-			<div class="wrapper">
-				<div class="wrapperContent">
-					<a class="logo" href="../">
-						<img src="../assets/logo.png" alt="Logo COLCIC" />
-					</a>
-					<div class="navList">
-						<ul>
-							<a href="../">Início</a>
-							<li active>Sobre</li>
-							<li>Apoio ao estudante</li>
-							<li>Colegiado</li>
-							<li>
-								<span>Docentes</span>
-							
-								<iconify-icon icon="akar-icons:link-chain">
-								</iconify-icon>
-							</li>
-							<li>Diversos</li>
-							<li>Contato</li>
-						</ul>
-					</div>
-					<button class="iconMenu" onclick="toggleNavList()">
-						<div>
-							<span></span>
-							<span></span>
-							<span></span>
-						</div>
-					</button>
+	<header>
+		<div class="wrapper">
+			<div class="wrapperContent">
+				<a class="logo" href="./">
+					<img src="./assets/logo.png" alt="Logo COLCIC" />
+				</a>
+				<div class="navList">
+					<ul>
+						<a href="../">Início</a>
+						<li class="dropdown">
+							<span class="title">
+								<span>
+									Sobre o curso
+								</span>
+								<iconify-icon icon="dashicons:arrow-down-alt2"></iconify-icon>
+							</span>
+							<ul>
+								<a active href="./sobre">Ciência da Computação na UESC</a>
+								<a href="./disciplinas">Programa das Disciplinas</a>
+								<a target="_blank" href="http://nbcgib.uesc.br/colcic/document/comp_curriculares/matriz_cic_2012.pdf">
+									<span>
+										Fluxograma do Curso
+									</span>
+									<iconify-icon icon="akar-icons:link-chain"></iconify-icon>
+								</a>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<span class="title">
+								<span>
+									Apoio ao estudante
+								</span>
+								<iconify-icon icon="dashicons:arrow-down-alt2"></iconify-icon>
+							</span>
+							<ul>
+								<a target="_blank" href="http://www.prograd.uesc.br/PortalSagres/Acesso.aspx">
+									<span>
+										Portal Acadêmico
+									</span>
+									<iconify-icon icon="akar-icons:link-chain"></iconify-icon>
+								</a>
+								<a target="_blank" href="http://www.wjr.eti.br/calculadoraUesc/">
+									<span>
+										Calculadora de Prova Final
+									</span>
+									<iconify-icon icon="akar-icons:link-chain"></iconify-icon>
+								</a>
+								<a href="./aproveitamentos">
+										Aproveitamento de Estudos
+								</a>
+								<a href="./matricula">
+										Orientação sobre Matrícula
+								</a>
+								<a href="./complementares">
+										Atividades complementares (Barema)
+								</a>
+								<a target="_blank" href="http://nbcgib.uesc.br/colcic/document/comp_curriculares/regulamentoestagio.pdf">
+									<span>
+										Regulamento do Estágio
+									</span>
+									<iconify-icon icon="akar-icons:link-chain"></iconify-icon>
+								</a>
+								<a href="./tcc">
+										Trabalhos de Conclusão de Curso
+								</a>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<span class="title">
+								<span>
+									Colegiado
+								</span>
+								<iconify-icon icon="dashicons:arrow-down-alt2"></iconify-icon>
+							</span>
+							<ul>
+								<a href="./colegiado">
+										Composição do colegiado
+								</a>
+								<a href="./calendario">
+										Calendário de Reuniões
+								</a>
+								<a target="_blank" href="http://nbcgib.uesc.br/dcetweb/">
+									<span>
+										Área para membros do COLCIC
+									</span>
+									<iconify-icon icon="akar-icons:link-chain"></iconify-icon>
+								</a>
+							</ul>
+						</li>
+						<a target="_blank" href="http://www.uesc.br/dcet/index.php?item=conteudo_informatica.php">
+							<span>Docentes</span>
+							<iconify-icon icon="akar-icons:link-chain"></iconify-icon>
+						</a>
+						<li class="dropdown">
+							<span class="title">
+								<span>
+									Diversos
+								</span>
+								<iconify-icon icon="dashicons:arrow-down-alt2"></iconify-icon>
+							</span>
+							<ul>
+								<a target="_blank" href="http://sinform.tecnojr.com.br/">
+									<span>
+										SINFORM
+									</span>
+									<iconify-icon icon="akar-icons:link-chain"></iconify-icon>
+								</a>
+								<a href="./egressos">
+										Egressos do Curso
+								</a>
+								<a href="./licencas">
+										Licenças acadêmicas de Software
+								</a>
+							</ul>
+						</li>
+						<a href="./contato">Contato</a>
+					</ul>
 				</div>
+				<button class="iconMenu" onclick="toggleNavList()">
+					<div>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</button>
 			</div>
-			<div id="top"></div>
-		</header>
+		</div>
+		<div id="top"></div>
+	</header>
 		<main>
 			<section variant>
 				<div class="MaxWidthWrapper">
