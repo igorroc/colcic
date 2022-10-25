@@ -15,7 +15,11 @@
 		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="../css/header.css" />
 		<link rel="stylesheet" type="text/css" href="../css/buttons.css" />
-		<link rel="stylesheet" type="text/css" href="../css/pages/disciplinas.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="../css/pages/disciplinas.css"
+		/>
 		<link rel="stylesheet" type="text/css" href="../css/footer.css" />
 		<link rel="stylesheet" type="text/css" href="../css/slideShow.css" />
 
@@ -40,10 +44,10 @@
 									></iconify-icon>
 								</span>
 								<ul>
-									<a active href="../sobre"
+									<a href="../sobre"
 										>Ciência da Computação na UESC</a
 									>
-									<a href="../disciplinas"
+									<a active href="../disciplinas"
 										>Programa das Disciplinas</a
 									>
 									<a
@@ -184,27 +188,31 @@
 			<div id="top"></div>
 		</header>
 		<main>
-			
-		<section variant>
-			<div class="MaxWidthWrapper">
-				<div class="mainWrapper">
-					<div class="mainContent">
-						<h1>
-							Programa das <br />
-							<b>Disciplinas</b>
-						</h1>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur
-							adipiscing elit. Sollicitudin enim pellentesque
-							commodo proin risus diam massa.
-						</p>
-					</div>
-					<div class="mainContentPhoto">
-						<img src="../assets/main_disciplinas.png" alt="" />
+			<section variant>
+				<div class="MaxWidthWrapper">
+					<div class="mainWrapper">
+						<div class="mainContent">
+							<h1>
+								Programa das <br />
+								<b>Disciplinas</b>
+							</h1>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Sollicitudin enim pellentesque
+								commodo proin risus diam massa.
+							</p>
+						</div>
+						<div class="mainContentPhoto">
+							<img src="../assets/main_disciplinas.png" alt="" />
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+			<section>
+				<div class="MaxWidthWrapper">
+					<div class="list" id="listaSemestres"></div>
+				</div>
+			</section>
 		</main>
 
 		<footer>
@@ -290,5 +298,6 @@
 		</footer>
 
 		<script src="../js/header.js"></script>
+		<script src="../js/semestres.js"></script>
 	</body>
 </html>
