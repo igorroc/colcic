@@ -51,3 +51,34 @@ section[variant] {
 		var(--variant-background-color-2)
 	);
 }
+
+::-moz-selection {
+	/* Code for Firefox */
+	background: var(--primary-color);
+	color: #fff;
+}
+
+::selection {
+	background: var(--primary-color);
+	color: #fff;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--primary-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: var(--primary-color-hover);
+}
