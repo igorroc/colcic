@@ -82,7 +82,8 @@ header .navList ul a:hover:not(.dropdown) {
 	color: #fff;
 }
 
-header .navList ul li[active]:not(.dropdown) {
+header .navList ul li[active]:not(.dropdown),
+header .navList ul a[active]:not(.dropdown) {
 	background: var(--primary-color);
 	color: #fff;
 }
