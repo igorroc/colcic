@@ -161,21 +161,21 @@ const coordenacao = [
 
 const tblColegiado = document.querySelector("#tableColegiado .content")
 composicao.forEach((membro) => {
-	const card = document.createElement("div")
-	card.classList.add("row")
-	card.innerHTML += `<span>${membro.materia}</span>`
-	card.innerHTML += `<span>${membro.departamento}</span>`
-	card.innerHTML += `<span>${membro.membro}</span>`
+	const row = document.createElement("div")
+	row.classList.add("row")
+	row.innerHTML += `<span>${membro.materia}</span>`
+	row.innerHTML += `<span>${membro.departamento}</span>`
+	row.innerHTML += `<span>${membro.membro}</span>`
 
-	tblColegiado.appendChild(card)
+	tblColegiado.appendChild(row)
 })
 
 const tblCoordenacao = document.querySelector("#tableCoordenação .content")
 coordenacao.forEach((membro) => {
-	const card = document.createElement("div")
-	card.classList.add("row")
-	card.innerHTML += `<span>${membro.name}</span>`
-	card.innerHTML += `<span>${membro.role}</span>`
+	const row = document.createElement("div")
+	row.classList.add("row")
+	row.innerHTML += `<span>${membro.name}</span>`
+	row.innerHTML += `<span>${membro.role}</span>`
 
-	tblCoordenacao.appendChild(card)
+	tblCoordenacao.appendChild(row)
 })
