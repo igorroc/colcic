@@ -16,6 +16,15 @@
 	background: var(--primary-color-hover);
 }
 
+.PrimaryButton:disabled {
+	cursor: not-allowed;
+	opacity: 0.5;
+}
+
+.PrimaryButton:disabled:hover {
+	background: var(--primary-color);
+}
+
 .SecondaryButton {
 	display: block;
 	background: var(--secondary-color);
@@ -32,4 +41,13 @@
 
 .SecondaryButton:hover {
 	background: var(--secondary-color-hover);
+}
+
+.SecondaryButton:disabled {
+	cursor: not-allowed;
+	opacity: 0.5;
+}
+
+.SecondaryButton:disabled:hover {
+	background: var(--secondary-color);
 }
