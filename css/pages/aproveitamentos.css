@@ -91,6 +91,7 @@ section.pointedSection {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
+	margin-left: 1em;
 }
 
 .procedimentos .content .imageWrapper {
