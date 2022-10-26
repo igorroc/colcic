@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Atividades Complementares | COLCIC</title>
+		<title>Programa das Disciplinas | COLCIC</title>
 
 		<link
 			rel="shortcut icon"
@@ -18,9 +18,10 @@
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="../css/pages/complementares.css"
+			href="../css/pages/disciplinas.css"
 		/>
 		<link rel="stylesheet" type="text/css" href="../css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="../css/slideShow.css" />
 
 		<script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
 	</head>
@@ -43,10 +44,10 @@
 									></iconify-icon>
 								</span>
 								<ul>
-									<a href="../_sobre/"
+									<a href="../sobre/"
 										>Ciência da Computação na UESC</a
 									>
-									<a href="../_disciplinas"
+									<a active href="../disciplinas"
 										>Programa das Disciplinas</a
 									>
 									<a
@@ -88,13 +89,13 @@
 											icon="akar-icons:link-chain"
 										></iconify-icon>
 									</a>
-									<a href="../_aproveitamentos">
+									<a href="../aproveitamentos">
 										Aproveitamento de Estudos
 									</a>
-									<a href="../_matricula">
+									<a href="../matricula">
 										Orientação sobre Matrícula
 									</a>
-									<a active href="../_complementares">
+									<a href="../complementares">
 										Atividades complementares (Barema)
 									</a>
 									<a
@@ -106,7 +107,7 @@
 											icon="akar-icons:link-chain"
 										></iconify-icon>
 									</a>
-									<a href="../_tcc">
+									<a href="../tcc">
 										Trabalhos de Conclusão de Curso
 									</a>
 								</ul>
@@ -192,16 +193,13 @@
 					<div class="mainWrapper">
 						<div class="mainContent">
 							<h1>
-								Atividades <br />
-								<b>Complementares</b>
+								Programa das <br />
+								<b>Disciplinas</b>
 							</h1>
 							<p>
-								Segundo as diretrizes curriculares nacionais
-								para cursos de computação, são componentes
-								importantes para o desenvolvimento pleno do
-								aluno, servindo de estímulo a uma formação
-								prática independente e interdisciplinar,
-								sobretudo nas relações com o mundo do trabalho.
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit. Sollicitudin enim pellentesque
+								commodo proin risus diam massa.
 							</p>
 						</div>
 						<div class="mainContentPhoto">
@@ -212,89 +210,7 @@
 			</section>
 			<section>
 				<div class="MaxWidthWrapper">
-					<div class="instrucoes">
-						<h2>Intruções</h2>
-						<div class="text">
-							<p>
-								Leia o procedimento abaixo. Preencha e imprima o
-								Barema clicando
-								<a
-									target="_blank"
-									href="http://nbcgib.uesc.br/colcic/baremacompl.html"
-									>aqui</a
-								>
-							</p>
-							<ol>
-								<li>
-									Junte
-									<b
-										>cópias de todos os comprovantes e
-										numere sequencialmente</b
-									>
-									as folhas no canto superior direito;
-								</li>
-								<li>
-									<b>Some as cargas horárias</b> por Atividade
-									respeitando as ordens do Barema;
-								</li>
-								<li>
-									<b>Preencha</b> no Barema, na coluna "Carga
-									horária cumprida", <b>o somatório</b> das
-									cargas horárias por Atividade;
-								</li>
-								<li>
-									Na mesma linha do Barema, na coluna
-									"Comprovante na folha",
-									<b>
-										indique o(s) número(s) da(s) folha(s)
-										correspondente(s)
-									</b>
-									à soma das cargas horárias por Atividade;
-								</li>
-								<li>
-									Ao final,
-									<b>clique no botão "TOTAL HORAS"</b>, caso
-									seja 200 horas ou mais, imprima, junte aos
-									comprovantes e entre com Requisição no
-									Protocolo;
-								</li>
-								<li>
-									Solicite ao atendente do Protocolo dar "fé
-									pública" nas cópias dos comprovantes
-									conforme os originais, para
-									<b>autenticação</b>.
-								</li>
-							</ol>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section>
-				<div class="MaxWidthWrapper">
-					<div class="atividades">
-						<h2>Atividades complementares válidas</h2>
-						<p>Conforme Projeto Pedagógico do Curso</p>
-						<div class="listaAtividades" id="listaAtividades"></div>
-					</div>
-				</div>
-			</section>
-
-			<section>
-				<div class="MaxWidthWrapper">
-					<p class="atividadesFooter">
-						As atividades serão computadas como Atividades
-						Complementares quando devidamente comprovadas através de
-						certificados e cronograma das mesmas, emitidas pelos
-						respectivos responsáveis. Os alunos deverão realizar as
-						atividades no decorrer do curso apresentando, no último
-						semestre, cópias autenticadas de todos os certificados
-						para que sejam computadas as horas. O não comprimento
-						das 200 horas de atividades complementares inviabiliza a
-						colação de grau do aluno. O aluno poderá verificar junto
-						ao colegiado, a qualquer momento, a validade do seu
-						certificado.
-					</p>
+					<div class="list" id="listaSemestres"></div>
 				</div>
 			</section>
 		</main>
@@ -382,6 +298,6 @@
 		</footer>
 
 		<script src="../js/header.js"></script>
-		<script src="../js/atividadesComplementares.js"></script>
+		<script src="../js/semestres.js"></script>
 	</body>
 </html>
