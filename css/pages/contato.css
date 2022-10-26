@@ -51,6 +51,11 @@
 	width: 100%;
 }
 
+.mainContent form button:hover ~ .tooltipMouse {
+	opacity: 1;
+	visibility: visible;
+}
+
 .contact {
 	display: flex;
 	flex-direction: column;
