@@ -1,0 +1,116 @@
+.mainWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.mainWrapper .mainContentPhoto {
+	display: none;
+	max-width: 30%;
+	width: auto;
+}
+
+.mainWrapper .mainContentPhoto img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.mainContent {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.mainContent h1 {
+	font-size: 2em;
+}
+
+.mainContent h1 b {
+	color: var(--primary-color);
+}
+
+section.pointedSection {
+	position: relative;
+	background: var(--variant-background-color);
+	margin-bottom: 215px;
+}
+
+.pointedSection:before {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	width: 0;
+	height: 0;
+	border-left: 50vw solid transparent;
+	border-right: 50vw solid transparent;
+
+	border-bottom: 30px solid var(--variant-background-color);
+}
+
+.pointedSection:after {
+	content: "";
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 100%);
+	width: 0;
+	height: 0;
+	border-left: 50vw solid transparent;
+	border-right: 50vw solid transparent;
+
+	border-top: 60px solid var(--variant-background-color);
+}
+
+#lista {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+}
+
+#lista * {
+	color: #fff;
+}
+
+#lista #listaSoftwares {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	justify-content: center;
+	gap: 30px;
+}
+
+#lista #listaSoftwares .card {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: start;
+	justify-content: center;
+	width: 100%;
+	max-width: 400px;
+	padding: 30px;
+	background: #fff;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+#lista #listaSoftwares .card * {
+	color: #232323;
+}
+
+#lista #listaSoftwares .card img {
+	max-height: 100px;
+}
+
+@media (min-width: 860px) {
+	.mainWrapper .mainContentPhoto {
+		display: block;
+	}
+	.mainContent {
+		max-width: 50%;
+	}
+}
