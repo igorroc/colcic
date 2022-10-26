@@ -66,6 +66,41 @@
 	text-align: center;
 }
 
+.atividades .title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+}
+
+.atividades .title .hint {
+	position: relative;
+	background: #fff;
+	margin-top: 20px;
+	padding: 10px 20px;
+	border-radius: 20px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.atividades .title .hint.mobile {
+	display: none;
+}
+
+.atividades .title .hint:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 15px solid #fff;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.1));
+}
+
 #listaAtividades {
 	display: flex;
 	gap: 20px;
@@ -109,7 +144,7 @@
 	transform: translateY(100%);
 }
 
-#listaAtividades .card:hover .description{
+#listaAtividades .card:hover .description {
 	transform: translateY(0);
 }
 
@@ -117,7 +152,7 @@
 	max-width: 80%;
 }
 
-.atividadesFooter{
+.atividadesFooter {
 	text-align: center;
 }
 
@@ -127,5 +162,14 @@
 	}
 	.mainContent {
 		max-width: 50%;
+	}
+}
+
+@media (max-width: 860px) {
+	.atividades .title .hint {
+		display: none;
+	}
+	.atividades .title .hint.mobile {
+		display: block;
 	}
 }
