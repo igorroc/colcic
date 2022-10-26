@@ -1,0 +1,38 @@
+.hint {
+	position: relative;
+	background: #fff;
+	margin-top: 20px;
+	padding: 10px 20px;
+	border-radius: 20px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+
+	display: none;
+}
+
+.hint.mobile {
+	display: block;
+}
+
+.hint:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 15px solid #fff;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.1));
+}
+
+@media (min-width: 900px) {
+	.hint {
+		display: block;
+	}
+
+	.hint.mobile {
+		display: none;
+	}
+}
