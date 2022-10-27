@@ -52,9 +52,10 @@
 
 .wrapperTable {
 	overflow: auto;
-	padding-bottom: 0.5em;
 	display: flex;
 	align-items: center;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	
 }
 
 .table {
@@ -63,7 +64,6 @@
 	min-width: 830px;
 	display: flex;
 	flex-direction: column;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .table .header {
@@ -84,6 +84,7 @@
 	max-width: 400px;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .table .header h3:not(:last-child) {
@@ -110,6 +111,7 @@
 	padding: 10px 0;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	width: 100%;
 	max-width: 400px;
 }

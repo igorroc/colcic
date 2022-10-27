@@ -52,9 +52,9 @@
 
 .wrapperTable {
 	overflow: auto;
-	padding-bottom: 0.5em;
 	display: flex;
 	align-items: center;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .table {
@@ -63,7 +63,6 @@
 	min-width: 830px;
 	display: flex;
 	flex-direction: column;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .table .header {
