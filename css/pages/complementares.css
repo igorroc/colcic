@@ -126,7 +126,11 @@
 }
 
 .atividadesFooter {
-	text-align: center;
+	text-align: justify;
+}
+
+.atividadesFooter b.danger {
+	color: var(--cancel-color);
 }
 
 @media (min-width: 860px) {
