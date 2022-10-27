@@ -7,7 +7,7 @@
 
 .mainWrapper .mainContentPhoto {
 	display: none;
-	max-width: 30%;
+	max-width: 20%;
 	width: auto;
 }
 
@@ -117,7 +117,7 @@
 }
 
 .mainWrapper .mainContentPhoto.contactPhoto {
-	width: 60%;
+	width: 40%;
 	max-width: unset;
 }
 
