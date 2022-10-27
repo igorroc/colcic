@@ -125,7 +125,7 @@ header .navList ul li.dropdown .title iconify-icon {
 }
 
 header .navList ul li.dropdown:hover .title iconify-icon {
-	transform: rotate(-180deg);
+	transform: scaleY(-1);
 }
 
 header .navList ul li.dropdown ul {
