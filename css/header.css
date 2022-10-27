@@ -103,6 +103,10 @@ header .navList ul li.dropdown {
 	flex-direction: column;
 }
 
+header .navList ul li.dropdown[active] .title{
+	border-bottom: 2px solid var(--primary-color);
+}
+
 header .navList ul li.dropdown .title {
 	flex: 1;
 	display: flex;
