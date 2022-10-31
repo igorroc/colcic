@@ -227,4 +227,8 @@
 		top: 50%;
 		transform: translateX(50%) translateY(-50%) rotate(-90deg);
 	}
+
+	.missao {
+		margin-left: 80px;
+	}
 }
