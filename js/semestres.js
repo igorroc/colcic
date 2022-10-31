@@ -108,11 +108,12 @@ const semestres = [
 
 const lista = document.querySelector("#listaSemestres")
 
-semestres.forEach((semestre) => {
+semestres.forEach((semestre, index) => {
 	const card = document.createElement("div")
-    card.classList.add("card")
+	card.classList.add("card", "scrollAnimation")
+	card.style.transitionDelay = `${index * 100}ms`
 	card.innerHTML = `<h2>${semestre.title}</h2>`
-    
+
 	const ul = document.createElement("ul")
 	semestre.lista.forEach((disciplina) => {
 		const li = document.createElement("li")
@@ -120,12 +121,12 @@ semestres.forEach((semestre) => {
 		ul.appendChild(li)
 	})
 
-    if(semestre.title === "Optativas"){
-        const divBreak = document.createElement("div")
-        divBreak.classList.add("break")
-        lista.appendChild(divBreak)
-    }
-    
+	if (semestre.title === "Optativas") {
+		const divBreak = document.createElement("div")
+		divBreak.classList.add("break")
+		lista.appendChild(divBreak)
+	}
+
 	card.appendChild(ul)
 	lista.appendChild(card)
 })
