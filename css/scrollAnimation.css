@@ -1,0 +1,14 @@
+/* Hidden */
+.scrollAnimation {
+	opacity: 0;
+    filter: blur(10px);
+    transform: translateX(-100%);
+	transition: all 1s ease !important;
+}
+
+/* Show */
+.appearScrollAnimation {
+	opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}

@@ -44,6 +44,7 @@
 
 .redesSociais {
 	position: absolute;
+	bottom: -70px;
 	transform: translateY(calc(-30% - 130px));
 	width: 100%;
 	display: flex;
@@ -203,6 +204,7 @@
 	}
 
 	.redesSociais {
+		bottom: -10px;
 		flex-direction: row;
 		align-items: stretch;
 		transform: translateY(calc(-50% - 20px));
