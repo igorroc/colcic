@@ -103,8 +103,17 @@
 	transition: all 200ms ease-out;
 }
 
+.redesSociais .list .item *{
+	transition: all 200ms ease-out;
+}
+
 .redesSociais .list .item:hover {
-	background: var(--secondary-color-hover);
+	background: var(--primary-color);
+	color: white;
+}
+
+.redesSociais .list .item:hover *{
+	color: white;
 }
 
 .entidades {
