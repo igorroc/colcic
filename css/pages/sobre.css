@@ -210,6 +210,9 @@
 	.mainWrapper .mainContentPhoto {
 		display: block;
 	}
+	.mainContent p{
+		max-width: 80%;
+	}
 }
 
 @media (max-width: 1000px) {
