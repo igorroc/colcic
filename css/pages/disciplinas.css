@@ -26,7 +26,8 @@
 	color: #fff;
 }
 
-.mainContent p {
+.mainContent p,
+.mainContent p b {
 	color: #fff;
 }
 
