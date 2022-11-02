@@ -67,11 +67,16 @@
 	justify-content: space-between;
 }
 
-#listaSemestres .card ul li {
+#listaSemestres .card ul a {
 	padding: 10px 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	text-decoration: none;
 }
 
-#listaSemestres .card ul li:nth-child(even) {
+#listaSemestres .card ul a:nth-child(even) {
 	background: #f8f8f8;
 }
 
