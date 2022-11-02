@@ -153,7 +153,7 @@ const composicao = [
 
 const coordenacao = [
 	{ name: "Hélder Conceição Almeida", role: "Coordenador" },
-	{ name: "Tricia Souto Santos", role: "Vice-Coordenadora" },
+	{ name: "Trícia Souto Santos", role: "Vice-Coordenadora" },
 	{ name: "Rita de Cássia Souza Dias da Silva", role: "Secretária" },
 	{ name: "Ramon Santos Costa", role: "Técnico de Informática" },
 	{ name: "Flávio Victor Souza de Melo", role: "Técnico de Informática" },
