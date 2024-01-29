@@ -37,7 +37,7 @@
 	height: 100%;
 	min-height: 200px;
 	position: relative;
-	overflow: auto;
+	overflow: hidden;
 	display: flex;
 	align-items: center;
 	scroll-snap-type: x mandatory;
@@ -80,4 +80,9 @@
 	/* font-size: 1.5em; */
 	font-weight: 500;
 	text-align: center;
+}
+
+.slideShow .slide p .comment {
+	font-size: smaller;
+    font-style: italic;
 }
